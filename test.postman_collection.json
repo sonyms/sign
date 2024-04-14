@@ -15,7 +15,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"value": "your api key",
 							"type": "string"
 						}
 					]
@@ -59,7 +59,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"value": "your api key",
 							"type": "string"
 						}
 					]
@@ -103,7 +103,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"value": "your api key",
 							"type": "string"
 						}
 					]
@@ -140,7 +140,7 @@
 					"bearer": [
 						{
 							"key": "token",
-							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"value": "your api key",
 							"type": "string"
 						}
 					]
@@ -175,7 +175,7 @@
 		"bearer": [
 			{
 				"key": "token",
-				"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+				"value": "your api key",
 				"type": "string"
 			}
 		]
