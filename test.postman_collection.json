@@ -1,0 +1,205 @@
+{
+	"info": {
+		"_postman_id": "ac31efc7-2cc9-441e-8695-903d6f070d19",
+		"name": "test",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "6545915",
+		"_collection_link": "https://universal-astronaut-247115.postman.co/workspace/sony~9fe137e6-8089-4b2b-97b4-01dc82649e43/collection/6545915-ac31efc7-2cc9-441e-8695-903d6f070d19?action=share&source=collection_link&creator=6545915"
+	},
+	"item": [
+		{
+			"name": "https://api.in1.echosign.com/api/rest/v6/transientDocuments",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "File",
+							"type": "file",
+							"src": "/C:/Users/sonym/OneDrive/Desktop/TaxInvoice_AIN2324000837150.pdf"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://api.in1.echosign.com/api/rest/v6/transientDocuments",
+					"protocol": "https",
+					"host": [
+						"api",
+						"in1",
+						"echosign",
+						"com"
+					],
+					"path": [
+						"api",
+						"rest",
+						"v6",
+						"transientDocuments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.in1.echosign.com:443/api/rest/v6/agreements",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"type": "string"
+						}
+					]
+				},
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"fileInfos\": [\r\n    {\r\n      \"transientDocumentId\": \"CBSCTBABDUAAABACAABAAFzzbc7R5sNcGzeQSuVsjFiSMfTrCMNFEs8WWeW_mcKOvBZ7XYy2jUkNGbhJGiOHe8HTmL_ONCecIl-tOqR5Ncy0BRE1pSU21op-Tp7Mz4Y4KZB9fg-zW7KAzVz3PVvHi4Et4v0RRuA-oEonC-d5qjX0iysEaA39ezCi23g8wjs1rrRcBfE_SIWxQc2UTbtk1lTv6UylLVFt9t7G_MiDGb4hGNpZwTZps4vr0XCGUtPa_yDVH4zfkH091qviar9L6sBRuFx2im96w7LnQhQOYP1TykleGKmKSoCIvfCC5-mo-Cf2ORKRuahES6XOme6ayGWiTOaP6gTWWjtathWTvl3__cxr7qHDjzWSDXh1xuU2uqw66ec1M_IvKER5YmyfS\"\r\n    }\r\n  ],\r\n  \"name\": \"MyTestAgreement\",\r\n  \"participantSetsInfo\": [\r\n    {\r\n      \"memberInfos\": [\r\n        {\r\n          \"email\": \"sony.ms@ospyn.com\"\r\n        }\r\n      ],\r\n      \"order\": 1,\r\n      \"role\": \"SIGNER\"\r\n    }\r\n  ],\r\n  \"signatureType\": \"ESIGN\",\r\n  \"state\": \"IN_PROCESS\",\r\n  \"locale\": \"en_US\",\r\n  \"status\": \"OUT_FOR_SIGNATURE\",\r\n  \"documentVisibilityEnabled\": false,\r\n  \"hasFormFieldData\": false,\r\n  \"hasSignerIdentityReport\": false,\r\n  \"agreementSettingsInfo\": {\r\n    \"canEditFiles\": true,\r\n    \"canEditElectronicSeals\": true,\r\n    \"canEditAgreementSettings\": true,\r\n    \"showAgreementReminderSentEvents\": false,\r\n    \"hipaaEnabled\": false,\r\n    \"showDocumentsViewedEvents\": false\r\n  },\r\n  \"sendType\": \"REGULAR_SEND\",\r\n  \"senderSigns\": \"SEND_ONLY_TO_SELF\",\r\n  \"documentRetentionApplied\": false,\r\n\"postSignOption\": {\r\n    \"redirectDelay\": 0,\r\n    \"redirectUrl\": \"http://localhost:8081/products/file\"\r\n}\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://api.in1.echosign.com:443/api/rest/v6/agreements",
+					"protocol": "https",
+					"host": [
+						"api",
+						"in1",
+						"echosign",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"api",
+						"rest",
+						"v6",
+						"agreements"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.in1.echosign.com:443/api/rest/v6/agreements/CBJCHBCAABAAtI8M4_aB0wNGeDD6Cjbsz_rZ2TpPl6lx/signingUrls",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.in1.echosign.com:443/api/rest/v6/agreements/CBJCHBCAABAAtI8M4_aB0wNGeDD6Cjbsz_rZ2TpPl6lx/signingUrls",
+					"protocol": "https",
+					"host": [
+						"api",
+						"in1",
+						"echosign",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"api",
+						"rest",
+						"v6",
+						"agreements",
+						"CBJCHBCAABAAtI8M4_aB0wNGeDD6Cjbsz_rZ2TpPl6lx",
+						"signingUrls"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://api.in1.echosign.com:443/api/rest/v6/agreements/CBJCHBCAABAAtI8M4_aB0wNGeDD6Cjbsz_rZ2TpPl6lx/combinedDocument",
+			"request": {
+				"auth": {
+					"type": "bearer",
+					"bearer": [
+						{
+							"key": "token",
+							"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+							"type": "string"
+						}
+					]
+				},
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://api.in1.echosign.com:443/api/rest/v6/agreements/CBJCHBCAABAAtI8M4_aB0wNGeDD6Cjbsz_rZ2TpPl6lx/combinedDocument",
+					"protocol": "https",
+					"host": [
+						"api",
+						"in1",
+						"echosign",
+						"com"
+					],
+					"port": "443",
+					"path": [
+						"api",
+						"rest",
+						"v6",
+						"agreements",
+						"CBJCHBCAABAAtI8M4_aB0wNGeDD6Cjbsz_rZ2TpPl6lx",
+						"combinedDocument"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "3AAABLblqZhBDiXnZfhar7yx8xSwKdSJPSsqV5BUZDSE1w2-gAUyJQmPWJofk11_bWw4U48XE5Lbu1ohDdhyTsyVBGdxyp2ae",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	]
+}
